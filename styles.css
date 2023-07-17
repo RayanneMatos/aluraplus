@@ -29,8 +29,8 @@ body {
 }
 
 .container {
-    height: 100vh;
-    display: grid;
+    height: auto;
+    display: flex;
     grid-template-columns: 50% 50%;
 }
 
@@ -159,6 +159,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .principal {
+        margin: 5.5rem 0rem;
+    }
     .container {
         display: block;
         background-image: none;
@@ -174,6 +177,8 @@ body {
     }
 
     .secundario {
+        height: 70vh;
+        padding-bottom: 5em;
         margin: 0;
         text-align: center;
     }
